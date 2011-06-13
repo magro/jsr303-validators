@@ -35,6 +35,7 @@ public class ConstraintValidatorFactoryEMFImpl implements ConstraintValidatorFac
 			instance = key.newInstance();
 		} catch (final Exception e) {
 			LOG.error("Could not instantiate " + key.getName(), e);
+			return null;
 		}
 
 		if (EntityManagerAwareValidator.class.isAssignableFrom(key)) {
