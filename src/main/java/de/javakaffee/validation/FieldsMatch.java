@@ -31,16 +31,16 @@ import javax.validation.Payload;
  * matching confirmation fields can be supplied.
  *
  * Example, compare 1 pair of fields:
- * <pre><code>
+ * <pre>
  * @FieldMatch(first = "password", second = "confirmPassword", message = "The password fields must match")
- * </pre></code>
+ * </pre>
  * Example, compare more than 1 pair of fields:
- * <pre><code>
+ * <pre>
  * @FieldMatch.List({
  *   @FieldMatch(first = "password", second = "confirmPassword", message = "The password fields must match"),
  *   @FieldMatch(first = "email", second = "confirmEmail", message = "The email fields must match")
  * })
- * </pre></code>
+ * </pre>
  * <p>
  * This constraint is based on this
  * <a href="http://stackoverflow.com/questions/1972933/cross-field-validation-with-hibernate-validator-jsr-303">stackoverflow post</a>
@@ -50,7 +50,7 @@ import javax.validation.Payload;
  * <li>if an Exception occurs when comparing the specified fields the exception is rethrown
  * as RuntimeException (instead of silently dropping it)</li>
  * <li>the thrown ConstraintValidationException (when fields don't match) contains the path of the second field so that
- * it's highlighted correctly and the error message goes to that field.
+ * it's highlighted correctly and the error message goes to that field.</li>
  * </ul> 
  * </p>
  */
