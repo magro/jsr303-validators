@@ -25,12 +25,11 @@ import javax.validation.Constraint;
 import javax.validation.Payload;
 
 /**
- * Is used to mark bean properties as unique compared to other entity instances
- * (like e.g. a username). The validator {@link UniqueKeyValidator} allows
+ * Is used to mark a bean property (e.g. a username) as unique compared to other
+ * entity instances. The validator {@link UniqueKeyValidator} allows the
  * annotated bean to use read-only properties (immutable). Also an update of the
- * entity is allowed, without having to use different validation groups for
- * create/edit.
- *
+ * entity is allowed.
+ * 
  * @author <a href="mailto:martin.grotzke@googlemail.com">Martin Grotzke</a>
  */
 @Constraint(validatedBy = { UniqueKeyValidator.class })
