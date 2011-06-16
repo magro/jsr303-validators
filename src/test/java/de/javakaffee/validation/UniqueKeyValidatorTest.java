@@ -15,6 +15,8 @@
  */
 package de.javakaffee.validation;
 
+import static de.javakaffee.validation.TestUtils.assertPropertyPath;
+import static de.javakaffee.validation.TestUtils.getByPropertyPath;
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
 
@@ -33,7 +35,6 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Persistence;
 import javax.validation.ConstraintViolation;
-import javax.validation.Path;
 import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorContext;
@@ -161,22 +162,6 @@ public class UniqueKeyValidatorTest {
                 expectedViolation.getMessageTemplate(), actualViolation.getMessageTemplate());
         assertEquals("Another constraintViolation seems to be compromised by UniqueKeyValidator.",
                 expectedViolation.getPropertyPath(), actualViolation.getPropertyPath());
-    }
-
-    private ConstraintViolation<?> getByPropertyPath(final Set<? extends ConstraintViolation<?>> violations,
-            final String propertyPath) {
-        for (final ConstraintViolation<?> violation : violations) {
-            final Path violationPropertyPath = violation.getPropertyPath();
-            if (violationPropertyPath != null && violationPropertyPath.toString().equals(propertyPath)) {
-                return violation;
-            }
-        }
-        return null;
-    }
-
-    private void assertPropertyPath(final ConstraintViolation<?> violation, final String expectedPropertyPath) {
-        assertEquals("Unexpected propertyPath for violation.", expectedPropertyPath, violation.getPropertyPath()
-                .toString());
     }
 
 }
