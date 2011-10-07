@@ -32,13 +32,13 @@ import javax.validation.Payload;
  *
  * Example, compare 1 pair of fields:
  * <pre>
- * @FieldMatch(first = "password", second = "confirmPassword", message = "The password fields must match")
+ * @FieldsMatch(first = "password", second = "confirmPassword", message = "The password fields must match")
  * </pre>
  * Example, compare more than 1 pair of fields:
  * <pre>
- * @FieldMatch.List({
- *   @FieldMatch(first = "password", second = "confirmPassword", message = "The password fields must match"),
- *   @FieldMatch(first = "email", second = "confirmEmail", message = "The email fields must match")
+ * @FieldsMatch.List({
+ *   @FieldsMatch(first = "password", second = "confirmPassword", message = "The password fields must match"),
+ *   @FieldsMatch(first = "email", second = "confirmEmail", message = "The email fields must match")
  * })
  * </pre>
  * <p>

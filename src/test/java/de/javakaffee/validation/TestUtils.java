@@ -22,11 +22,14 @@ import java.util.Set;
 import javax.validation.ConstraintViolation;
 import javax.validation.Path;
 
+import org.junit.Ignore;
+
 /**
  * Utilities for checks on constraint violations.
  * 
  * @author <a href="mailto:martin.grotzke@googlemail.com">Martin Grotzke</a>
  */
+@Ignore
 public class TestUtils {
 
     private TestUtils() {

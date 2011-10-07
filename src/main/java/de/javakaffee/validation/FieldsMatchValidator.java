@@ -49,12 +49,12 @@ public class FieldsMatchValidator implements ConstraintValidator<FieldsMatch, Ob
                 return false;
             }
             return valid;
-        } catch (final Exception ignore) {
+        } catch (final Exception e) {
             // If s.o. would prefer that such an error is silently dropped, an
             // attribute "ignoreExceptions" could be added to the FieldMatch
             // annotation.
             throw new RuntimeException("An error occurred when validating the fields '" + firstFieldName + "' and"
-                    + " '" + secondFieldName + "' on bean of type '" + target.getClass().getName());
+                    + " '" + secondFieldName + "' on bean of type '" + target.getClass().getName(), e);
         }
     }
 }
