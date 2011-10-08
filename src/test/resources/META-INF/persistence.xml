@@ -9,8 +9,8 @@
       <!-- Enables auto discovery of persistent classes, -->
       <!-- otherwise they must be listed using <class>   -->
       <!-- exclude-unlisted-classes>false</exclude-unlisted-classes -->
-      <class>de.javakaffee.validation.Entity1</class>
-      <class>de.javakaffee.validation.Entity2</class>
+      <class>de.hashcode.validation.Entity1</class>
+      <class>de.hashcode.validation.Entity2</class>
       
      
       <properties>

@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.javakaffee.validation;
+package de.hashcode.validation;
 
-import static de.javakaffee.validation.ReflectionUtils.getPropertyValue;
+import static de.hashcode.validation.ReflectionUtils.getPropertyValue;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

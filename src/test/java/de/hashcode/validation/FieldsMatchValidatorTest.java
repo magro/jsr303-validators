@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.javakaffee.validation;
+package de.hashcode.validation;
 
-import static de.javakaffee.validation.TestUtils.getByPropertyPath;
+import static de.hashcode.validation.TestUtils.getByPropertyPath;
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.assertTrue;
@@ -30,6 +30,9 @@ import javax.validation.ValidatorFactory;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import de.hashcode.validation.FieldsMatch;
+import de.hashcode.validation.FieldsMatchValidator;
 
 /**
  * Test for {@link FieldsMatchValidator}.

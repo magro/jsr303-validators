@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.javakaffee.validation;
+package de.hashcode.validation;
 
-import static de.javakaffee.validation.ReflectionUtils.getIdField;
-import static de.javakaffee.validation.ReflectionUtils.getPropertyValue;
+import static de.hashcode.validation.ReflectionUtils.getIdField;
+import static de.hashcode.validation.ReflectionUtils.getPropertyValue;
 
 import java.io.Serializable;
 import java.lang.reflect.Field;

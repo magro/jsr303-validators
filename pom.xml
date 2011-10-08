@@ -9,7 +9,7 @@
 		<version>7</version>
 	</parent>
 
-	<groupId>de.javakaffee</groupId>
+	<groupId>de.hashcode</groupId>
 	<artifactId>jsr303-validators</artifactId>
 	<version>1.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -21,7 +21,7 @@
 		<system>github.com</system>
 		<url>https://github.com/magro/jsr303-validators/issues</url>
 	</issueManagement>
-	<inceptionYear>2010</inceptionYear>
+	<inceptionYear>2011</inceptionYear>
 	<prerequisites>
 		<maven>2.0.9</maven>
 	</prerequisites>
@@ -101,7 +101,7 @@
 					<findbugsXmlOutput>true</findbugsXmlOutput>
 					<threshold>Normal</threshold> <!-- High|Normal|Low|Exp|Ignore -->
 					<effort>Max</effort><!-- Min|Default|Max -->
-					<onlyAnalyze>de.javakaffee.validation.-</onlyAnalyze>
+					<onlyAnalyze>de.hashcode.validation.-</onlyAnalyze>
 					<debug>false</debug>
 				</configuration>
 			</plugin>

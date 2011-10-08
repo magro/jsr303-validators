@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.javakaffee.validation;
+package de.hashcode.validation;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
@@ -38,6 +38,9 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
+
+import de.hashcode.validation.GuiceConstraintValidatorFactory;
+import de.hashcode.validation.UniqueKeyValidator;
 
 /**
  * Test for {@link GuiceConstraintValidatorFactory}.

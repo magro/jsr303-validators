@@ -1,7 +1,7 @@
 /**
  * 
  */
-package de.javakaffee.validation;
+package de.hashcode.validation;
 
 /**
  * @author Martin Grotzke

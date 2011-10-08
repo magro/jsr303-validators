@@ -13,21 +13,35 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.javakaffee.validation;
+package de.hashcode.validation;
 
-import javax.persistence.EntityManager;
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorFactory;
+
+import com.google.inject.Inject;
+import com.google.inject.Injector;
 
 /**
- * Interface for validators that are interested in an {@link EntityManager},
- * when the {@link ConstraintValidatorFactoryEMFImpl} is used.
+ * A {@link ConstraintValidatorFactory} that relies on guice for creating
+ * validators.
  *
  * @author <a href="mailto:martin.grotzke@googlemail.com">Martin Grotzke</a>
  */
-public interface EntityManagerAwareValidator {
+public class GuiceConstraintValidatorFactory implements ConstraintValidatorFactory {
+
+    private final Injector injector;
+
+    @Inject
+    public GuiceConstraintValidatorFactory(final Injector injector) {
+        this.injector = injector;
+    }
 
     /**
-     * Set the {@link EntityManager}.
+     * {@inheritDoc}
      */
-    void setEntityManager(EntityManager entityManager);
+    @Override
+    public <T extends ConstraintValidator<?, ?>> T getInstance(final Class<T> key) {
+        return injector.getInstance(key);
+    }
 
 }
