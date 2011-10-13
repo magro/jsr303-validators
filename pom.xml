@@ -48,6 +48,16 @@
 			</roles>
 			<timezone>+1</timezone>
 		</developer>
+		<developer>
+			<id>ole.langbehn</id>
+			<name>Ole Langbehn</name>
+			<email>ole.langbehn@hashcode.de</email>
+			<roles>
+				<role>owner</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
 	</developers>
 
 	<build>
