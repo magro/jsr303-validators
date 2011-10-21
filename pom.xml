@@ -73,6 +73,15 @@
 						<encoding>utf-8</encoding>
 					</configuration>
 				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-gpg-plugin</artifactId>
+					<inherited>true</inherited>
+					<configuration>
+						<keyname>hashcode.de</keyname>
+						<useAgent>true</useAgent>
+					</configuration>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
