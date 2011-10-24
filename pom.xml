@@ -11,7 +11,7 @@
 
 	<groupId>de.hashcode</groupId>
 	<artifactId>jsr303-validators</artifactId>
-	<version>1.1</version>
+	<version>1.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>jsr303 validators</name>
 	<description>Some custom jsr303 validators</description>
