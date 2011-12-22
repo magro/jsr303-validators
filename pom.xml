@@ -231,6 +231,10 @@
 	</dependencies>
 
 	<repositories>
+		<repository>
+			<id>eclipselink repo</id>
+			<url>http://download.eclipse.org/rt/eclipselink/maven.repo/</url>
+		</repository>
 	</repositories>
 
 </project>
